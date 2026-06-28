@@ -33,8 +33,10 @@ function identity(a, b){
 }
 
 function resize(){
-    canvas.width = window.innerWidth / scale;
-    canvas.height = window.innerHeight / scale;
+    const wid = window.visualViewport? window.visualViewport.width : window.innerWidth;
+    const hght = window.visualViewport? window.visualViewport.height : window.innerHeight; 
+    canvas.width = wid / scale;
+    canvas.height = hght / scale;
     canvas.style.width = window.innerWidth + 'px';
     canvas.style.height = window.innerHeight + 'px';
     cols = Math.ceil(canvas.width / cellSize) + 2;
@@ -132,6 +134,7 @@ function loop(thisTime){
 // Driving Code
 resize();
 window.addEventListener('resize', resize);
+window.addEventListener('orientationchange', resize);
 document.addEventListener('mousemove', e => {
     mx = e.clientX;
     my = e.clientY;

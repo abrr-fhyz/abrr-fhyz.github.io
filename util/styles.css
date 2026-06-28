@@ -32,7 +32,10 @@
   canvas {
     display: block;
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh; /* dynamic viewport height */
     z-index: 0;
     pointer-events: none;
   }
@@ -321,6 +324,9 @@
 
 /* Responsive Tweaks */
 @media (max-width: 991px) {
+    body {
+        padding-top: 70px;
+    }
     .photo-wrapper {
         margin-bottom: 30px;
     }
