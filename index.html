@@ -1,0 +1,559 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abrar Fahyaz | Personal Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./util/styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
+  
+    <canvas id="canva"></canvas>
+
+  <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-white" href="#">Abrar Fahyaz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+          <li class="nav-item">
+            <a class="nav-link cv-btn ms-lg-3 px-3 btn-sm mt-1"
+            href="./resources/resume.pdf"
+            target="_blank">
+                Download CV
+            </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about" class="d-flex align-items-center min-vh-100 section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center order-lg-2 mb-4 mb-lg-0">
+          <div class="photo-wrapper">
+            <img src="./resources/myPic.jpg" alt="Abrar Fahyaz" class="img-fluid rounded-circle shadow-lg profile-photo">
+          </div>
+        </div>
+        <div class="col-lg-8 order-lg-1">
+          <h1 class="display-4 fw-bold mb-3">Abrar Fahyaz.</h1>
+          <h3 class="text-muted mb-4"><span>University of Dhaka</span></h3>
+          <p class="lead mb-4">
+            Hi! I am currently in the process of finishing my undergrads at the <i>Department of Computer Science and Engineering, University of Dhaka.</i> 
+            <br>
+            I like learing about machine learning architecture and computational linguistics. I am currently working on a multi-modal Alzheimer's Detection Project under <a href="https://www.salford.ac.uk/our-staff/maybin-muyeba">Dr. Maybin K. Muyeba</a> from the <i>University of Salford, Manchester</i>.
+          </p>
+          <p class="text-secondary mb-5">
+            I have worked remotely at <strong>Scale AI Inc., Fellowship.AI</strong> and <strong>GenMorphics AI Solutions</strong>. I am a former member of the competitive cybersecurity team and multiple-time national CTF champion, <strong>DU_Featherless_Bipeds</strong> (<i>NRFCTF2024, CCAF2024, CyberSiege2025, BUPCTF2025</i>). 
+          </p>
+          
+          <div class="d-flex gap-3">
+            <a href="mailto:abrar-2021211182@cs.du.ac.bd" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://scholar.google.com/citations?user=q8gWshUAAAAJ&hl=en" class="social-btn"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            <a href="https://github.com/abrr-fhyz" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/abrar-fahyaz/" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="./resources/resume.pdf" class="social-btn" target="_blank"><i class="fas fa-user-tie"></i>CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Selected Publications</h2>
+      <!-- <p class="text-muted mb-5">For a full list, please visit my <a href="https://scholar.google.com/citations?user=q8gWshUAAAAJ&hl=en">Google Scholar</a>.</p>
+    -->
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">Neural Networks with Neuroplasticity: Adaptive Learning Through Connection Pruning and Hebbian Updates</h5>
+            <p class="mb-1 text-muted"><em>Communications in Computer and Information Science, 2025</em></p>
+            <p class="mb-2"><strong>A. Fahyaz</strong></p>
+            <div class="d-flex gap-2">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-032-11352-8_5" class="btn btn-outline-dark btn-sm rounded-pill"><i class="fas fa-link"></i> DOI</a>
+              <a href="./resources/Paper-99-Final.pdf" class="btn btn-outline-dark btn-sm rounded-pill"><i class="fas fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">Neuroplastic Neural Networks: Adaptive Learning Through Structural Plasticity and Hebbian Updates</h5>
+            <p class="mb-1 text-muted"><em>Springer Nature Computer Science, 2026</em></p>
+            <p class="mb-2"><strong>A. Fahyaz</strong>, K. Kiani, MK Muyeba</p>
+            <div class="d-flex gap-2">
+              <a href="https://link.springer.com/article/10.1007/s42979-026-04932-7" class="btn btn-outline-dark btn-sm rounded-pill"><i class="fas fa-link"></i> DOI</a>
+              <a href="https://rdcu.be/fkPxp" class="btn btn-outline-dark btn-sm rounded-pill"><i class="fas fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="collapse" id="publicationCollapse">  
+      </div>
+      <button class="btn btn-link see-more-btn text-decoration-none fw-bold p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#publicationCollapse" aria-expanded="false" aria-controls="publicationCollapse" id="publicationBtn" onclick="toggleBtnText(this)">See More <i class="fas fa-chevron-down"></i></button>
+    </div> -->
+  </section>
+
+  <section id="projects" class="section-padding">
+    <div class="container">
+
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="project-showcase">
+        <div class="project-entry">
+            <div class="project-header">
+              <h3>Neuroplastic Neural Network</h3>
+              <div class="project-links">
+                <a href="https://github.com/abrr-fhyz/neuroplasticProject">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+            Novel framework that explores how biologically inspired neuroplasticity might improve artificial deep learning. Includes manually designed Multi-layered Perceptrons and Convolutional Blocks with integrated Hebbian Learning, structural plasticity mechanics, and self-modulated learning.
+            </p>
+            <div class="project-tags">
+              <span>Multi-Layer Perceptron</span>
+              <span>Convolutional Neural Network</span>
+              <span>Neuromorphic AI</span>
+            </div>
+          </div>
+
+        <div class="project-entry">
+          <div class="project-header">
+            <h3>Neural Connectome Project</em></h3>
+            <div class="project-links">
+              <a href="https://github.com/abrr-fhyz/spike-net">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <p>
+            Implemented a LIF SNN from scratch and OpenWorm datasets. Modeled all 302 neurons and 5100+ synapses of <em>C. elegans</em> to emulate complete connectome dynamics through simulating chemo-taxis.
+          </p>
+
+          <div class="project-tags">
+            <span>Spiking Neural Network</span>
+            <span>Reinforcement Learning</span>
+            <span>Neuromorphic AI</span>
+          </div>
+        </div>
+
+        <!-- Hidden projects -->
+
+        <div class="project-entry">
+            <div class="project-header">
+              <h3>PulseTrace</h3>
+              <div class="project-links">
+                <a href="https://github.com/abrr-fhyz/PulseTrace">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              Agentic AI agent capable of scraping social media, and summarizing sentiment through FAISS + BM25
+              with rerankers, and a RAG pipeline. Optional PDF briefing and AI corpus integrated with
+              application following BYOK. Beats Last30Days on <b>nDCG@5</b> by <i>38%</i>, and on <b>precision@5 and mean norm</b> by roughly <i>14%</i>.
+            </p>
+            <div class="project-tags">
+              <span>LangGraph</span>
+              <span>Hybrid RAG</span>
+              <span>Model Context Protocol</span>
+              <span>Agentic AI</span>
+            </div>
+          </div>
+        
+        <div class="collapse" id="projectCollapse">
+
+          <div class="project-entry">
+            <div class="project-header">
+              <h3>N_Avram: Sentiment Analysis Framework</h3>
+
+              <div class="project-links">
+                <a href="https://github.com/abrr-fhyz/N_Avram">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              Random Forest based sentiment classifier using TF-IDF,
+              n-grams, and lemmatization achieving ~84% accuracy on IMDB.
+            </p>
+            <div class="project-tags">
+              <span>Natural Language Processing</span>
+            </div>
+          </div>
+
+          <div class="project-entry">
+            <div class="project-header">
+              <h3>EasyForm AI</h3>
+
+              <div class="project-links">
+                <a href="https://github.com/orgs/EasyFormAI/repositories">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              LLM-powered document processing platform for automated form
+              filling with information extraction and chatbot assistance.
+            </p>
+            <div class="project-tags">
+              <span>LLM Integration</span>
+              <span>Hybrid RAG</span>
+              <span>OCR Automation</span>
+            </div>
+          </div>
+
+          <div class="project-entry">
+          <div class="project-header">
+            <h3>ChaOS: Turing-Complete OS Emulator</h3>
+            <div class="project-links">
+              <a href="https://github.com/abrr-fhyz/chaOS">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://youtu.be/a18sfySZBDI">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <p>
+            Fully functional OS with virtual memory, process scheduling, I/O handling, filesystem, shell layers, and a custom ISA with a compiler toolchain enabling Turing-complete execution.
+          </p>
+
+          <div class="project-tags">
+            <span>C/C++</span>
+            <span>ISA Design</span>
+            <span>Operating Systems</span>
+          </div>
+        </div>
+
+
+          <div class="project-entry">
+            <div class="project-header">
+              <h3>P2P Video Streaming Platform</h3>
+              <div class="project-links">
+                <a href="https://github.com/abrr-fhyz/Peer2PeerNetwork">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              Distributed peer-to-peer streaming system with DHT-based
+              discovery, progressive playback, integrity checks, and a
+              FastAPI backend.
+            </p>
+
+            <div class="project-tags">
+              <span>Decentralized TCP</span>
+              <span>Distributed Hash Table</span>
+              <span>FastAPI</span>
+              <span>StreamLit</span>
+            </div>
+          </div>
+
+          <div class="project-entry">
+            <div class="project-header">
+              <h3>Theia: Photo Sharing Platform</h3>
+              <div class="project-links">
+                <a href="https://youtu.be/cqLra_9JPLM">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              Flutter-based social photo platform featuring real-time
+              synchronization, facial recognition, geo-clustering, and
+              image editing.
+            </p>
+            <div class="project-tags">
+              <span>Dart</span>
+              <span>Flutter</span>
+              <span>Firebase</span>
+              <span>ML Toolkit</span>
+            </div>
+          </div>
+
+          <div class="project-entry">
+          <div class="project-header">
+            <h3>Strategic War Simulator</h3>
+
+            <div class="project-links">
+              <a href="https://github.com/abrr-fhyz/War-Simulator">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://youtu.be/9fNIDih7QWg?si=n9hUHUopTU9UJ7O-">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://www.thedailystar.net/campus/campus/news/du-student-creates-1971-liberation-war-time-lapse-map-military-perspective-3711991">
+                <i class="fas fa-newspaper"></i>
+              </a>
+            </div>
+          </div>
+          <p>
+            Military simulation platform featuring troop movement
+            visualization, battle timelines, historical scenarios, and
+            persistent campaign support. Featured in The Daily Star.
+          </p>
+          <div class="project-tags">
+            <span>Java</span>
+            <span>JavaFx</span>
+          </div>
+        </div>
+
+        <div class="project-entry">
+            <div class="project-header">
+              <h3>ShN Text Editor</h3>
+              <div class="project-links">
+                <a href="https://github.com/abrr-fhyz/ShN-Editor_Windows">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtu.be/U8ZuzUVwA_E?si=DS7flil6WKhZO-oK">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              A cross-platform text editor with syntax highlighting and compilation support, alongside document analysis tools and integrated file explorer.
+            </p>
+            <div class="project-tags">
+              <span>C/C++</span>
+              <span>Qt</span>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="btn btn-link see-more-btn text-decoration-none fw-bold p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#projectCollapse" onclick="toggleBtnText(this)">See More <i class="fas fa-chevron-down"></i></button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5 class="fw-bold">Advanced AI Coder</h5>
+            <p class="timeline-org mb-1">Scale AI, Inc | Sep 2024 - Dec 2025</p>
+            <p class="text-muted small">AI Trainer and Reviewer on Outlier.ai and and OpenAI's Feather Program.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot bg-secondary"></div>
+          <div class="timeline-content">
+            <h5 class="fw-bold">Machine Learning Fellow</h5>
+            <p class="timeline-org mb-1">Fellowship.AI | Sep 2025 - Nov 2025</p>
+            <p class="text-muted small">Fellow in Cohort 35, worked on Real Estate Listings Optimization with ML.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot bg-dark"></div>
+          <div class="timeline-content">
+            <h5 class="fw-bold">Quality Assurance Analyst</h5>
+            <p class="timeline-org mb-1">GenMorphics AI Solution | Jan 2024 - Oct 2024 </p>
+            <p class="text-muted small">QA for annotated LLM training data on SuperAnnotate’s Project X and OctupusMath.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot bg-dark"></div>
+          <div class="timeline-content">
+            <h5 class="fw-bold">Academic Materials Contributor</h5>
+            <p class="timeline-org mb-1">Udvash-Ummesh | Aug 2022 - July 2024</p>
+            <p class="text-muted small">Worked on academic materials and mock tests for SSC, HSC and university entrance tests.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section-padding">
+  <div class="container">
+    <h2 class="section-title">Selected Awards</h2>
+    <p class="text-muted text-left mb-4">
+      Notable achievements and recognitions awarded between <i>2023 – Present</i>
+    </p>
+    <div class="accordion" id="awardsAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="teamHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teamAwards">
+            DU_Featherless_Bipeds
+          </button>
+        </h2>
+        <div id="teamAwards" class="accordion-collapse collapse" data-bs-parent="#awardsAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                    <strong>Bangladesh University of Professionals CTF</strong><br>
+                    <small class="text-muted">Champion | Rank 1</small>
+                </div>
+                <small class="text-muted"><i>September 2025</i></small>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>University of Asia Pacific CyberSiege</strong><br>
+                  <small class="text-muted">Champion | Rank 1</small>
+                </div>
+                <small class="text-muted"><i>May 2025</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>East West University NRFCTF</strong><br>
+                  <small class="text-muted">Champion | Rank 1</small>
+                </div>
+                <small class="text-muted"><i>November 2024</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>CCAF Cyber Hackathon</strong><br>
+                  <small class="text-muted">Champion | Rank 1</small>
+                </div>
+                <small class="text-muted"><i>October 2024</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Dhaka University Intra-CTF</strong><br>
+                  <small class="text-muted">Runner's Up | Rank 3</small>
+                </div>
+                <small class="text-muted"><i>November 2023</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Bangladesh University of Engineering and Technology CTF</strong><br>
+                  <small class="text-muted">Runner's Up | Rank 4</small>
+                </div>
+                <small class="text-muted"><i>October 2024</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Islamic University of Technology CTF</strong><br>
+                  <small class="text-muted">Runner's Up | Rank 4</small>
+                </div>
+                <small class="text-muted"><i>April 2024</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Bangladesh Armed Forces CyberRaid CTF</strong><br>
+                  <small class="text-muted">Runner's Up | Rank 5</small>
+                </div>
+                <small class="text-muted"><i>February 2025</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>IUT Code-Refactoring Contest</strong><br>
+                  <small class="text-muted">Finalist | Rank 7</small>
+                </div>
+                <small class="text-muted"><i>April 2024</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong> SUST CSE Carnival</strong><br>
+                  <small class="text-muted">Finalist</small>
+                </div>
+                <small class="text-muted"><i>February 2024</i></small>
+              </li>
+
+              <!-- More awards -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Individual Awards -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="otherHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#otherAwards">Others</button>
+        </h2>
+        <div id="otherAwards"
+             class="accordion-collapse collapse"
+             data-bs-parent="#awardsAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+                <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Infinity AI Buildfest</strong><br>
+                  <small class="text-muted">Finalist</small>
+                </div>
+                <small class="text-muted"><i>June 2026</i></small>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>TechTron Poster Presentation</strong><br>
+                  <small class="text-muted">2nd Place</small>
+                </div>
+                <small class="text-muted"><i>May 2025</i></small>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Dhaka University Three Minute Thesis - Presentation</strong><br>
+                  <small class="text-muted">4th Place</small>
+                </div>
+                <small class="text-muted"><i>November 2024</i></small>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Dhaka University Undergraduate Research Summit</strong><br>
+                  <small class="text-muted">Finalist</small>
+                </div>
+                <small class="text-muted"><i>March 2023</i></small>
+              </li>
+
+              <!-- More achievements -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0 small">Last Updated: <i>June 2026</i>.<br>&copy; Abrar Fahyaz.</p>
+      <div class="mt-2">
+        <a href="https://github.com/abrr-fhyz" class="text-white-50 mx-2"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abrar-fahyaz/" class="text-white-50 mx-2"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="./util/otherScript.js"></script>
+<script src="./util/script.js"></script>
+</html>
