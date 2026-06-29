@@ -14,13 +14,22 @@
 
   html {
     background: var(--deep);
+     max-width: 100%;
+     overflow-x: hidden;
   }
+
+  footer .container {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 
   body {
     font-family: 'Inter', sans-serif;
     color: #bd8eec;
     line-height: 1.6;
     position: relative;
+     max-width: 100%;
+     overflow-x: hidden;
   }
 
   /* Keep all page content above the canvas */
@@ -253,27 +262,25 @@
 
     /* Accordion container */
     .accordion-item {
-        border-radius: 10px;
         overflow: hidden;
         background: transparent;
     }
 
     /* Closed accordion button */
     .accordion-button {
-        background: linear-gradient(135deg, #9d75e767, #d7ace36e);
+        background: linear-gradient(135deg, #d1d1ff6e, #7d49dd67);
         color: rgb(37, 0, 70);
         font-weight: 600;
-        border-radius: 10px !important;
     }
 
     /* Hover effect */
     .accordion-button:hover {
-        background: linear-gradient(135deg, #9d75e7be, #d7ace3bb);
+        background: linear-gradient(135deg, #d8bce0bb, #9d75e7be);
     }
 
     /* Open accordion button */
     .accordion-button:not(.collapsed) {
-        background: linear-gradient(135deg, #9d75e7be, #d7ace3bb);
+        background: linear-gradient(135deg, #d8bce0bb, #9d75e7be);
         color: #2d1b4e;
         box-shadow: none;
     }

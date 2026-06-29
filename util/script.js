@@ -134,7 +134,12 @@ function loop(thisTime){
 // Driving Code
 resize();
 window.addEventListener('resize', resize);
-window.addEventListener('orientationchange', resize);
+if (window.visualViewport){
+    window.visualViewport.addEventListener('resize', resize);
+}
+window.addEventListener('orientationchange', () => {
+    setTimeout(resize, 100);
+});
 document.addEventListener('mousemove', e => {
     mx = e.clientX;
     my = e.clientY;
