@@ -7,13 +7,14 @@
 const scale = 0.8; 
 const damping = 0.96;
 const cellSize = 10;
-const fps = 80;
+const fps = 100;
 const thickness = 0.03;
 const upperIntensity = 0.6;
 const redCoeff = 90;
 const blueCoeff = 0;
 const greenCoeff = 90;
 
+const isMobile = navigator.maxTouchPoints > 0;
 const canvas = document.getElementById('canva');
 const context = canvas.getContext('2d');
 let curr, prev;
@@ -115,7 +116,7 @@ function loop(thisTime){
         const dx = mx - prevMx;
         const dy = my - prevMy;
         const speed = Math.abs(dx) + Math.abs(dy);
-        if(speed > 2 && speed < 350){
+        if(speed > 2 && speed < 300){
             const frames = Math.ceil(speed / 5);
             for (let i=0; i< frames; i++){
                 const t = i / frames;
@@ -134,21 +135,17 @@ function loop(thisTime){
 // Driving Code
 resize();
 window.addEventListener('resize', resize);
-if (window.visualViewport){
-    window.visualViewport.addEventListener('resize', resize);
+if(!isMobile){
+    document.addEventListener('mousemove', e => {
+        mx = e.clientX;
+        my = e.clientY;
+    });
+    document.addEventListener('touchmove', e => {
+        const touch = e.touches[0];
+        mx = touch.clientX;
+        my = touch.clientY;
+    }, {passive : true});
 }
-window.addEventListener('orientationchange', () => {
-    setTimeout(resize, 100);
-});
-document.addEventListener('mousemove', e => {
-    mx = e.clientX;
-    my = e.clientY;
-});
-document.addEventListener('touchmove', e => {
-    const touch = e.touches[0];
-    mx = touch.clientX;
-    my = touch.clientY;
-}, {passive : true});
 document.addEventListener('click', e => {
     fluidDynamics(e.clientX, e.clientY, 32, 256);
 });

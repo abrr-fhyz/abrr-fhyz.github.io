@@ -14,22 +14,15 @@
 
   html {
     background: var(--deep);
-     max-width: 100%;
-     overflow-x: hidden;
+    max-width: 100%;
   }
-
-  footer .container {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
 
   body {
     font-family: 'Inter', sans-serif;
     color: #bd8eec;
     line-height: 1.6;
     position: relative;
-     max-width: 100%;
-     overflow-x: hidden;
+    max-width: 100%;
   }
 
   /* Keep all page content above the canvas */
@@ -343,6 +336,12 @@
     }
     .display-4 {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
     }
 }
 
