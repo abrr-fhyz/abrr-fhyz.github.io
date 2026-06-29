@@ -18,8 +18,8 @@ const canvas = document.getElementById('canva');
 const context = canvas.getContext('2d');
 let curr, prev;
 let cols, rows;
-let mx = window.innerWidth / 2;
-let my = window.innerHeight / 2;
+let mx = window.visualViewport? window.visualViewport.width : window.innerWidth / 2;
+let my = window.visualViewport? window.visualViewport.height : window.innerHeight / 2;
 let prevMx = mx;
 let prevMy = my;
 let lastTime = 0;
@@ -115,7 +115,7 @@ function loop(thisTime){
         const dx = mx - prevMx;
         const dy = my - prevMy;
         const speed = Math.abs(dx) + Math.abs(dy);
-        if(speed > 2 && speed < 300){
+        if(speed > 2 && speed < 350){
             const frames = Math.ceil(speed / 5);
             for (let i=0; i< frames; i++){
                 const t = i / frames;
