@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abrar Fahyaz | Personal Site</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+  <link rel="manifest" href="./Favicon/site.webmanifest">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../util/OtherStyles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
+  <!-- Canvas -->
+  <canvas id="canva"></canvas>
+
+  <!-- NavBar -->
+  <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-white" href="#">Abrar Fahyaz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./otherPage.html#pers">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./otherPage.html#writings">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="./otherPage.html#fiction">Fiction</a></li>
+          <li class="nav-item"><a class="nav-link" href="./otherPage.html#awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" id="personalBtn2" href="../index.html#about">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Personal -->
+  <section id="pers" class="d-flex align-items-center min-vh-100 section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center order-lg-1 mb-4 mb-lg-0">
+          <div class="photo-wrapper">
+            <img src="../resources/bupFest.jpg" alt="Abrar Fahyaz" class="img-fluid rounded-3 shadow-lg profile-photo">
+          </div>
+        </div>
+        <div class="col-lg-8 order-lg-2">
+          <h1 class="display-4 fw-bold mb-3">Abrar Fahyaz.</h1>
+          <p class="lead mb-4">
+            Hey thereeeee! If you accidentally stumbled onto this page, please note that this isn't about my professional or academic CS profile. This is more about my other interests and hobbies.</i> 
+            <br>
+             If you're not looking for that, feel free to use the navbar to go back to the more technical part of the website! <i>See ya!</i>
+             <!-- My brother in christ, this is a vanity project lmaooooo -->
+          </p>
+          <p class="text-secondary mb-4">
+            Former member of the <strong>Adamjee Cantonment Public School Quiz Team</strong> in the Nationals (<strong>BTV 2018</strong>), and of <strong>Notre Dame College - Crimson</strong>, specializing in history, geography, and literature. I love to write, both fiction and non-fiction, with my major influences being <i>Fydor Dostoevsky, Ursula K. L. Guin</i> and <i>Franz Kafka</i>.  I have published several articles for the now defunct Online Magazine, <strong>The Dhaka Apologue</strong>, as well as for the international news portal <strong>The Business Standard</strong>.  
+          </p>
+          <p class="text-secondary mb-5">
+            If you wish to read or explore any of my works, please do not hesitate to contact me!
+          </p>
+          <div class="d-flex gap-3">
+            <a href="mailto:fahyaz.abrar@gmail.com" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/abrar-fahyaz/" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/a_fahyaz/" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="writings" class="section-padding">
+    <div class="container">
+
+      <h2 class="section-title">Selected Writings</h2>
+      <p class="text-muted text-left mb-4">
+        Though not an exhaustive list, these include some of the non-fiction literary works I'm most proud of.
+      </p>
+      <div class="project-showcase">
+
+        <div class="project-entry">
+            <div class="project-header">
+              <h3>Induced Demand and Why Dhaka's Traffic Woes Might Soon Get Worse</h3>
+              <div class="project-links">
+              <a href="https://www.tbsnews.net/thoughts/why-dhakas-traffic-woes-might-soon-get-worse-576962">
+                <i class="fas fa-newspaper"></i> The Business Standard
+              </a>
+              </div>
+            </div>
+            <p>
+              A news report on how the newly inaugurated Dhaka Expressway will likely increase congestion in the long run.
+            </p>
+            <div class="project-tags">
+              <span>Urban Planning</span>
+              <span>Transit Infrastructure</span>
+            </div>
+          </div>
+
+        <div class="project-entry">
+          <div class="project-header">
+            <h3>History of Bangladesh</h3>
+            <div class="project-links">
+              <a href="https://web.archive.org/web/20220626200655/https://thisistda.net/17764/a-political-history-of-bangladesh/">
+                <i class="fas fa-newspaper"></i> The Dhaka Apologue
+              </a>
+            </div>
+          </div>
+          <p>
+            An essay on the geopolitical history of Bangladesh and its state apparatus, separating its history into six distinct phases, namely:
+            <em>The War</em> (1971), <em>The Two Revolutions</em> (1971–1975), <em>The Coups</em> (1975–1981), <em>The Strong Man</em> (1981–1990),
+            <em>Demokratizatsiya</em> (1990–2006), and <em>The New Order</em> (2006–2024).
+          </p>
+          <div class="project-tags">
+            <span>History</span>
+            <span>Geopolitics</span>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <div class="project-header">
+            <h3>Envy</h3>
+            <div class="project-links">
+              <a href="https://web.archive.org/web/20220626200707/https://thisistda.net/17465/envy/">
+                <i class="fas fa-newspaper"></i> The Dhaka Apologue
+              </a>
+            </div>
+          </div>
+          <p>
+            A sociological exploration of the othering of disenfranchised minority groups and their societal perception by the majority.
+          </p>
+          <div class="project-tags">
+            <span>Optics</span>
+            <span>Societal Hierarchies</span>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <div class="project-header">
+            <h3>Lost</h3>
+            <div class="project-links">
+              <a href="https://web.archive.org/web/20220807193147/https://thisistda.net/12415/lost/">
+                <i class="fas fa-newspaper"></i> The Dhaka Apologue
+              </a>
+            </div>
+          </div>
+          <p>
+            An exploration of the metaethics of group-think, and how outliers are targetted for being a perceived threat to social order.
+          </p>
+          <div class="project-tags">
+            <span>Metaethics</span>
+            <span>Existentialism</span>
+          </div>
+        </div>
+
+        <!-- Hidden writings -->
+        <div class="collapse" id="writingCollapse">
+
+          <div class="project-entry">
+          <div class="project-header">
+            <h3>In Defense of Capitalism</h3>
+            <div class="project-links">
+              <a href="https://web.archive.org/web/20220625101859/https://thisistda.net/16739/in-defence-of-capitalism/">
+                <i class="fas fa-newspaper"></i> The Dhaka Apologue
+              </a>
+            </div>
+          </div>
+          <p>
+            A satire that critiques common talking points of pro-capitalist mouthpieces by imitating the vernacular of the ones defending it.
+          </p>
+          <div class="project-tags">
+            <span>Satire</span>
+            <span>Socio-Economics</span>
+          </div>
+        </div>
+
+          <div class="project-entry">
+            <div class="project-header">
+              <h3>Ozymandias</h3>
+              <div class="project-links">
+                <span class="publication-tag"><i>The Dhaka Apologue</i></span>
+              </div>
+            </div>
+            <p>
+              A short story exploring the cyclical recurrence of history through the rise and fall of empires, inspired by the eponymous poem by <i>Percy Bysshe Shelley</i>.
+            </p>
+            <div class="project-tags">
+              <span>Philosophical Fiction</span>
+              <span>Historical Recurrence</span>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="btn btn-link see-more-btn text-decoration-none fw-bold p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#writingCollapse" onclick="toggleBtnText(this)">See More <i class="fas fa-chevron-down"></i></button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fictional Works -->
+  <section id="fiction" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Works of Fiction</h2>
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">Book 1: The Two Realms</h5>
+            <p class="mb-1 text-muted">An amateur epistolary novella set in the fictional setting of the Two Realms, mostly consisting of in-universe encyclopedia entries and other official documents. The theme can be described as a mixture of cyberpunk, arcanepunk, high-fantasy, historical fiction, and social commentary. <i>~29k words</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">Book 2: Continued</h5>
+            <p class="mb-1 text-muted">A more grounded, personal chronicle following a young mage navigating the societal hurdles of the aforementioned fictional setting of The Two Realms. The themes are more immediate and localised, focusing on the expression of emotions and the human psyche. <i>~26k words</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">The Island</h5>
+            <p class="mb-1 text-muted">A philosophical short in three parts that explores the themes of depression, loss, and detachment. It features the heavy usuage of allegories to represent the internal machinations of the mind. This story has been awarded several accolades.<i>~1k words</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">Cordyceps universalis mortem</h5>
+            <p class="mb-1 text-muted">A short story, thematically simillar to both found footage and psychological horror, that follows a disgruntled survivor in post-apocalyptic Dhaka after a zombie outbreak. This story has also been awarded multiple times. <i>~2k words</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card mb-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="fw-bold">Your Little Secret</h5>
+            <p class="mb-1 text-muted">A play in two acts set during the war of 1971, following a squad of West Pakistani soldiers. The themes are the banality of evil, and the densentization towards violence. It was voted the best script in a national film fest. <i>~6k words</i></p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Awards -->
+  <section id="awards" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Selected Awards</h2>
+      <p class="text-muted text-left mb-4">
+        Notable achievements and recognitions spanning <i>2018 – 2022</i>. These are mostly from high-school.
+      </p>
+    <div class="accordion" id="awardsAccordion">
+      <!-- First Place -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="firstHeading">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#firstAwards">
+            First Place
+          </button>
+        </h2>
+
+        <div id="firstAwards" class="accordion-collapse collapse"
+            data-bs-parent="#awardsAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>BUP Film Fest 2022</strong><br>
+                  <small class="text-muted">Script Writing | Champion</small>
+                </div>
+                <small class="text-muted"><i>2022</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>1st National Cultural Classicist Carnival</strong><br>
+                  <small class="text-muted">Team Based Quiz | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Ideal College Technophilia 1.0</strong><br>
+                  <small class="text-muted">Sci-Fi Story Writing | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Govt. Lab ECL Quarantine Classics</strong><br>
+                  <small class="text-muted">Listener Event | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>MSCLC The Linguistic Battle</strong><br>
+                  <small class="text-muted">What If Segment | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>MSCLC The Linguistic Battle</strong><br>
+                  <small class="text-muted">Poetry | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>VNAC Astronomy Fest</strong><br>
+                  <small class="text-muted">Fiction Writing | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>USC Online Carnival 2.0</strong><br>
+                  <small class="text-muted">Sci-Fi Story Writing | Champion</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Yugen Scientific Write-Up</strong><br>
+                  <small class="text-muted">Academic Writing | Champion</small>
+                </div>
+                <small class="text-muted"><i>2019</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Adamjee Mathematician Hunt</strong><br>
+                  <small class="text-muted">Math Olympiad | Champion</small>
+                </div>
+                <small class="text-muted"><i>2018</i></small>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Place -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="secondHeading">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#secondAwards">
+            Second Place
+          </button>
+        </h2>
+
+        <div id="secondAwards" class="accordion-collapse collapse"
+            data-bs-parent="#awardsAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>NDC 7th National English Carnival</strong><br>
+                  <small class="text-muted">Article Writing | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2022</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>NDC 4th National Earth and Space Summit</strong><br>
+                  <small class="text-muted">Astro Article Writing | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2021</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>St. Joseph Logic Mania Quarantalent</strong><br>
+                  <small class="text-muted">IQ All Star | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>MSCLC The Linguistic Battle</strong><br>
+                  <small class="text-muted">Situational Story Writing | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+               <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>NDC Carnival De Literature</strong><br>
+                  <small class="text-muted">Creative Story Writing | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>NDC Arcadeopedia</strong><br>
+                  <small class="text-muted">Astronomy Olympiad | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>ECL Quarantine Classics</strong><br>
+                  <small class="text-muted">Situational Story Writing | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>BAF Shaheen DSQC</strong><br>
+                  <small class="text-muted">History and Geography Olympiad | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>6th Laboratorians Science Fest</strong><br>
+                  <small class="text-muted">Astronomy Olympiad | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2019</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>6th Laboratorians Science Fest</strong><br>
+                  <small class="text-muted">Biology Olympiad | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2019</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Edvive Pen It Down</strong><br>
+                  <small class="text-muted">Argumentative Writing | Runner-Up</small>
+                </div>
+                <small class="text-muted"><i>2019</i></small>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="otherHeading">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#otherAwards">
+            Others
+          </button>
+        </h2>
+
+        <div id="otherAwards" class="accordion-collapse collapse"
+            data-bs-parent="#awardsAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>NDC 7th National English Carnival</strong><br>
+                  <small class="text-muted">Instant Story Writing | Rank 3</small>
+                </div>
+                <small class="text-muted"><i>2022</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>AIUB Math Olympiad</strong><br>
+                  <small class="text-muted">Math Olympiad | Rank 14</small>
+                </div>
+                <small class="text-muted"><i>2021</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Bangladesh Math Olympiad (BdMO)</strong><br>
+                  <small class="text-muted">Regional Round Qualification</small>
+                </div>
+                <small class="text-muted"><i>2021</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Ideal Elementus Math Summit</strong><br>
+                  <small class="text-muted">Math Olympiad | Rank 3</small>
+                </div>
+                <small class="text-muted"><i>2020</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Laboratorians English Championship</strong><br>
+                  <small class="text-muted">Team Based Quiz | Rank 3</small>
+                </div>
+                <small class="text-muted"><i>2019</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Bangladesh TeleVision Quiz Quiz National Quiz Competition 2018</strong><br>
+                  <small class="text-muted">Rank 3</small>
+                </div>
+                <small class="text-muted"><i>2018</i></small>
+              </li>
+
+              <li class="mb-3 d-flex justify-content-between">
+                <div>
+                  <strong>Channel i - Hridoye Mati O Manush</strong><br>
+                  <small class="text-muted">Cultural Exchange Program | Participant</small>
+                </div>
+                <small class="text-muted"><i>2012</i></small>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <div id="transition-overlay"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../util/script.js"></script>
+<script src="../util/otherScript.js"></script>
+</html>

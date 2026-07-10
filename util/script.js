@@ -10,9 +10,9 @@ const cellSize = 10;
 const fps = 90;
 const thickness = 0.03;
 const upperIntensity = 0.6;
-const redCoeff = 90;
-const blueCoeff = 0;
-const greenCoeff = 90;
+let redCoeff = 90;
+let blueCoeff = 0;
+let greenCoeff = 90;
 
 const isMobile = navigator.maxTouchPoints > 0;
 const canvas = document.getElementById('canva');
@@ -132,6 +132,28 @@ function loop(thisTime){
     }
 }
 
+function setTheme(theme) {
+    if (theme === "personal") {
+        redCoeff = 100;
+        greenCoeff = 30;
+        blueCoeff = 100;
+    } else {
+        redCoeff = 90;
+        greenCoeff = 90;
+        blueCoeff = 0;
+    }
+    sessionStorage.setItem("theme", theme);
+}
+
+function toggleTheme() {
+    const current = sessionStorage.getItem("theme") || "default";
+    if (current === "default") {
+        setTheme("personal");
+    } else {
+        setTheme("default");
+    }
+}
+
 // Driving Code
 resize();
 window.addEventListener('resize', resize);
@@ -149,4 +171,6 @@ if(!isMobile){
 document.addEventListener('click', e => {
     fluidDynamics(e.clientX, e.clientY, 32, 256);
 });
+const savedTheme = sessionStorage.getItem("theme") || "default";
+setTheme(savedTheme);
 requestAnimationFrame(loop);
