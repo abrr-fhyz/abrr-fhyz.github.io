@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@100;200&family=Playfair+Display:wght@700&display=swap');
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -70,7 +70,7 @@
     }
 
     h1, h2, h3, h4, h5 {
-        font-family: 'Playfair Display', serif; /* A nice serif font for headings looks more academic */
+        font-family: 'Playfair Display', serif;
         font-weight: 700;
     }
 
@@ -192,7 +192,9 @@
         transform: translateX(5px);
     }
 
-    /* Project Cards */
+    /* Writing Project Cards
+       (formerly code-project cards — links now point to
+       newspapers/outlets rather than GitHub/live demos) */
     .project-entry {
         padding: 2rem;
         margin-bottom: 2rem;
@@ -210,7 +212,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
+
+    /* Byline line for outlet + date, e.g.
+       "The Atlantic · March 2025" */
+    .project-meta {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #671adc;
+    }
+
     .project-links a {
         font-size: 1.4rem;
         margin-left: 1rem;
@@ -357,6 +372,10 @@
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
+    }
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
