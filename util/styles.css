@@ -337,6 +337,13 @@
         color: #8b6db2;
     }
 
+    .company-logo {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
 /* Responsive Tweaks */
 @media (max-width: 991px) {
     body {
