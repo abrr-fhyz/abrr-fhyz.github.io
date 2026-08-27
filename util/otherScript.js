@@ -23,7 +23,7 @@ if (personalBtn2) {
     });
 }
 
-const lastUpdated = "July 2026";
+const lastUpdated = "September 2026";
 
 document.getElementById("footer-placeholder").innerHTML = `
 <footer class="bg-dark text-white text-center py-4">

@@ -181,8 +181,8 @@
     /* Publication Card */
     .publication-card {
         padding: 2rem;
-        background: rgba(135, 100, 154, 0.15);
-        border-left: 3px solid #0ff135;
+        background: rgba(100, 154, 151, 0.304);
+        border-left: 3px solid #009519;
         padding-left: 20px;
         backdrop-filter: blur(5px);
         transition: transform 0.3s;
@@ -198,8 +198,8 @@
     .project-entry {
         padding: 2rem;
         margin-bottom: 2rem;
-        background: rgba(135, 100, 154, 0.15);
-        border-left: 3px solid #0ff135;
+        background: rgba(100, 154, 151, 0.304);
+        border-left: 3px solid #009519;
         padding-left: 20px;
         backdrop-filter: blur(5px);
         border-radius: 0 20px 20px 0;
@@ -236,7 +236,9 @@
         padding: .3rem .8rem;
         margin-right: .5rem;
         border-radius: 999px;
-        background: rgba(143, 50, 236, 0.141);
+        background: rgba(158, 248, 170, 0.462);
+        font-weight: bold;
+        border: 1px solid rgba(0,0,0,1);
     }
 
     /* Experience Timeline */
@@ -343,7 +345,7 @@
 
     /* Award title */
     .accordion-body strong {
-        color: #21b65a;
+        color: #0e5a2b;
         font-size: 1.05rem;
     }
 

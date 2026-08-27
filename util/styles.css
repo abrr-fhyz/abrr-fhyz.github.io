@@ -222,6 +222,8 @@
         margin-right: .5rem;
         border-radius: 999px;
         background: rgba(143, 50, 236, 0.141);
+        font-weight: bold;
+        border: 1px solid rgba(0, 0, 0, 0.978);
     }
 
     /* Experience Timeline */
